@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp">
+
+    <EditText
+        android:id="@+id/row_event"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:layout_marginLeft="100dp"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/bath1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="190dp"
+        android:layout_marginTop="10dp"
+        android:text="บาท "
+        android:textColor="#000000"
+        android:textSize="15sp"/>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/spinner_row"
+            android:layout_width="130dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="220dp">
+        </androidx.appcompat.widget.AppCompatSpinner>
+
+    </FrameLayout>
+    
+    <ImageView
+        android:id="@+id/image_remove"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="340dp"
+        android:src="@drawable/ic_baseline_close_24"/>
+
+</RelativeLayout>
